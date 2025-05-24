@@ -1,0 +1,6 @@
+streamlit
+openai
+amadeus
+python-dotenv
+requests
+urllib3
