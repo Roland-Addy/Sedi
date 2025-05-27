@@ -7,16 +7,42 @@ st.set_page_config(page_title="Sedi | AI Hotel Finder", layout="centered")
 # Custom CSS for aesthetics
 st.markdown("""
     <style>
-        .main {background-color: #f7f9fa;}
-        h1, h2, h3, h4 {color: #1E3A8A; font-family: 'Helvetica Neue', sans-serif;}
-        .stTextInput > label {font-weight: bold; color: #333;}
-        .stTextArea textarea {font-size: 16px; height: 120px;}
+        .main {
+            background-color: #0e1117;
+        }
+
+        h1, h2, h3, h4 {
+            color: #ffffff;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .stTextInput > label, .stTextArea > label {
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+
+        .stTextArea textarea {
+            font-size: 16px;
+            height: 120px;
+            color: #f0f0f0;
+            background-color: #1e1e1e;
+        }
+
         .result-card {
-            background-color: white;
+            background-color: #ffffff;
+            color: #000000;  /* Text color explicitly set for readability */
             padding: 1rem;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #0066cc;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 """, unsafe_allow_html=True)
